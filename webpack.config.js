@@ -1,13 +1,29 @@
-var webpack = require('webpack')
-    //import webpack from 'webpack'
 
+const path = require('path');
+ 
 module.exports = {
-    devtool: 'eval',
-    entry: [
-        './index.js'
-    ],
+    entry: './src/index.js',
     output: {
-        path: __dirname,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'public'),
+        publicPath:'public/'
+    },
+    mode:'development',
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
+            }
+        ]
     }
 }

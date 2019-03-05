@@ -4,11 +4,19 @@ import './index.css';
 // import App from './App';
 // import TicTacToe from './TicTacToe';
 import Contact from './pages/Contact';
-import * as serviceWorker from './serviceWorker';
+// import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Contact />, document.getElementById('root'));
+const MOUNT_NODE = document.getElementById('root');
+
+let render = () => {
+    ReactDOM.render(
+        <Contact />,
+        MOUNT_NODE,
+    );
+};
+render();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// serviceWorker.unregister();

@@ -14,7 +14,7 @@
     .contact-top-category {
         height: 60px;
         margin: 0 15px;
-        background: url('../assets/arrow_down.png') right no-repeat;
+        background: url('../../assets/arrow_down.png') right no-repeat;
         background-size: 12px 7px;
     }
     .contact-title{
@@ -52,7 +52,7 @@
         align-items: center;
     }
     .isSelect{
-        background: url('../assets/icon_select.png') right no-repeat;
+        background: url('../../assets/icon_select.png') right no-repeat;
         background-size: 20px 20px;
     }
     .people-avatar{

@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.css';
-import papa from '../assets/avatar_papa.jpeg';
-import husband from '../assets/avatar_husband.jpeg';
-import mama from '../assets/avatar_mama.jpg';
-import cousin from '../assets/avatar_cousin.jpeg';
+import papa from '../../assets/avatar_papa.jpeg';
+import husband from '../../assets/avatar_husband.jpeg';
+import mama from '../../assets/avatar_mama.jpg';
+import cousin from '../../assets/avatar_cousin.jpeg';
 
 class Contact extends React.Component {
     state = {

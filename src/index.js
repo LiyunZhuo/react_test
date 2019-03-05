@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 // import TicTacToe from './TicTacToe';
-import Contact from './Contact';
+import Contact from './pages/Contact';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Contact />, document.getElementById('root'));
